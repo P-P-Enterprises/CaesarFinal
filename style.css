@@ -1,0 +1,802 @@
+.header {
+  background-color: gray;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Stay Dreaming';
+  src: url('Stay\ Dreaming.otf') format('truetype');
+}
+
+.nav-item {
+  font-size: 10px;
+}
+
+.imgnav {
+  width: 50px;
+}
+
+.estilos {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.caixa {
+  padding: 3px;
+  /* Adiciona espaço interno à div */
+  border: 2px solid black;
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  box-sizing: content-box;
+  justify-content: space-between;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 5%;
+  height: 10%;
+}
+
+p {
+  font-size: 14px;
+
+}
+
+/*Slider*/
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 25;
+  height: fit-content;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+
+  text-transform: capitalize;
+}
+
+.product-container {
+  padding: 0;
+  display: flex;
+  overflow-x: auto;
+overflow-y: scroll;
+padding-bottom:3%;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  box-shadow: rgba(255, 0, 0, 0.801) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+ 
+  width: 19.5%;
+  height: 6%;
+margin-left: 5%;
+margin-top: 2%;
+margin-bottom: 2%;
+border-radius: 2%;
+}
+.product-card:hover{
+  width:19.52%;
+
+}
+.offcanvas {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  transition: left 0.3s ease;
+}
+.offcanvas.show {
+  left: 0;
+}
+
+
+
+
+
+.box-produto {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 29%;
+
+}
+.cardbutton{
+  justify-content:center;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+ 
+}
+.cardbutton2{
+  justify-content:center;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.buttonpesq{
+  text-align: center;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+ font-size: 1.8vw;
+ border: none;
+border-radius: 8%;
+ padding: 1%;
+margin-left: 1%;
+margin-right: 1%;
+margin-top: 2%;
+}
+.buttonpesq2{
+  color: #ffffff;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+ font-size: 1.8vw;
+ border: none;
+border-radius: 7%;
+ padding: 1%;
+margin-left: 1%;
+margin-right: 1%;
+margin-top: 2%;
+margin-bottom: 2%;
+}
+.buttonpesq3{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+ font-size: 1.8vw;
+ border: none;
+border-radius: 7%;
+ padding: 1%;
+margin-left: 1%;
+margin-right: 1%;
+margin-top: 5%;
+margin-bottom: 2%;
+width: 10%;
+
+
+}
+.posbutton{
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+}
+.buttonpesq2:hover{
+  color: rgb(255, 255, 255);
+  background-color:#EACD91;
+  font-size: 1.9vw;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.685);
+}
+.buttonpesq3:hover{
+  color: rgb(255, 255, 255);
+  background-color:#000000;
+  font-size: 1.9vw;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.685);
+}
+.buttonpesq:hover{
+  margin-left: 0%;
+  font-size: 1.9vw;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+#Div-Princ{
+  justify-content:space-evenly;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  align-content: center;
+flex-wrap: wrap;
+margin-left: 2%;
+margin-right: 2%;
+}
+.img-box {
+  width:15%;
+}
+  .img-box2 {
+       width:100%;
+    }
+    .img-box3{
+
+      height:20%;
+      width: 30%;
+      border-radius: 3%;
+    }
+    
+    .offcanvas2 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
+      z-index: 9999;
+      display: none; /* Inicialmente oculto */
+    }
+    .textos{
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+text-align: center;
+    }
+    
+    .offcanvas-content2 {
+      text-align: center;
+  display: flex;
+  flex-direction: column;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%; /* Largura máxima do conteúdo (ajuste conforme necessário) */
+      height: 100%; /* Altura máxima do conteúdo (ajuste conforme necessário) */
+      overflow: auto; /* Adiciona barras de rolagem se o conteúdo for maior que a tela */
+      background-color: #fff;
+      padding: 2%;
+      box-sizing: border-box; /* Garante que o padding não aumente o tamanho do conteúdo */
+    }
+    
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer; /* Cursor apontando para indicar que é clicável */
+    }
+.headproduct {
+
+  text-align: center;
+ 
+}
+.headproduct2 {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  margin-left: 4%;
+width: 25%;
+}
+.headproduct2:hover{
+ 
+  transform: scale(1.008);
+}
+
+.vlrfnl {
+  font-weight: bold;
+  font-size: 1.8vw;
+  color: rgba(66, 65, 65, 0.603);
+
+}
+
+.vlrinc {
+  font-size: 1.8vw;
+  color: rgba(255, 0, 0, 1);
+  text-decoration: line-through;
+  margin-bottom: 0%;
+}
+
+.offcanvas-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1%;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  text-align: center;
+}
+
+.offcanvas-content img {
+ width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card-bt {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.card-bt.n {
+  background-color: #f44336;
+}
+.product-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+
+.product-thumb {
+width:100%;
+height: 10%;
+  object-fit:cover;
+  padding: 0%;
+  margin: 0%;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 1%;
+  border-radius: 5%;
+  color: #ff7d7d;
+  right: 2%;
+  top: 2%;
+  text-transform: capitalize;
+  font-size: 2vw;
+}
+
+.card-btn {
+ text-align: center;
+ border: none;
+ margin-top: 2%;
+ margin-bottom: 2%;
+ font-size: 2vw;
+ background: none;
+ padding: 2%;
+color: black;
+}
+
+
+
+.card-btn:hover {
+  background: #000000;
+  color: #ffffff;
+  padding: 2%;
+  border-radius: 9%;
+}
+
+.product-info {
+  width: 100%;
+  height: 15vw;
+
+
+}
+
+.product-brand {
+  text-transform: uppercase;
+  font-size: 3vw;
+
+  text-align: center;
+}
+
+.product-short-description {
+  max-width: 100vw;
+  height: 5vh;
+  line-height: 100%;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+margin-top: 0%;
+  font-size: 1.3vw;
+  text-align: center;
+}
+
+
+.price {
+  font-weight: 900;
+  font-size: 2.5vw;
+  
+}
+
+.actual-price {
+  margin-left: 2%;
+  opacity: 0.5;
+  text-decoration: line-through;
+  font-size: 1.8vw;
+  color: #ff1100;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+/*Slider cabuloso acima*/
+
+.time{
+font-size: 2vw;
+text-align: center;
+margin-top: 5%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.timer{
+  color: #ffffff;
+background-color: #000000;
+border-radius: 15%;
+max-width: 35%;
+text-align: center;
+padding: 1%;
+box-shadow: rgba(255, 255, 255, 0) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.footer {
+
+  text-align: center;
+  width: 100%;
+  background-color: #EACD91;
+  height: 100%;
+}
+
+.logo1 {
+  width: 15%;
+
+}
+
+.tittle1 {
+  text-align: left;
+  font-size: 4vw;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-top: 1.5%;
+}
+.tittle3{
+  color: #000000;
+  font-size: 4vw;
+}
+.tittle2 {
+  text-align: center;
+  font-size: 3vw;
+color: #EACD91;
+margin-top: -1.5vw;
+}
+
+.beck {
+  text-align: center;
+}
+
+.Logo2 {
+  width: 35%;
+  align-items: center;
+  text-align: center;
+}
+
+.Logo {
+  width: 75%;
+  align-items: center;
+  text-align: center;
+}
+
+.socio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.sociodesc {
+  width: 45%;
+  font-size: 3vw;
+}
+
+.sociodesc::first-letter {
+  color: #EACD91;
+  font-size: 4.5vw;
+  font-family: 'Stay Dreaming';
+  text-shadow: 0px 8px 8.5px rgba(0, 0, 0, 0.479);
+  font-weight: bold;
+}
+
+.sociotext {
+  text-align: center;
+  font-size: 4vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 0px 8px 8.5px rgba(0, 0, 0, 0.295);
+}
+
+.sociotext::first-letter {
+
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.sociotext2 {
+
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.sociotext3 {
+  font-size: 5vw;
+  font-family: 'Stay Dreaming';
+}
+
+.socioimg {
+  text-align: center;
+}
+
+.Caesar {
+  text-shadow: 0px 8px 8.5px rgba(0, 0, 0, 0.295);
+  font-size: 2.65vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container1 {
+
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+
+.container2 {
+
+
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+#nav-text1 {
+
+  font-size: 1.5vw;
+
+}
+
+#nav-text2 {
+
+  font-size: 1.5vw;
+
+}
+
+#nav-text3 {
+
+  font-size: 1.5vw;
+
+}
+
+#nav-text4 {
+
+  font-size: 1.5vw;
+
+}
+
+#nav-text5 {
+
+  font-size: 1.5vw;
+}
+
+.beckhum {
+  color: #EACD91;
+  font-size: 5.5vw;
+  font-family: 'Stay Dreaming';
+  text-shadow: 0px 8px 8.5px rgba(0, 0, 0, 0.445);
+}
+.contentmis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 5% 25% 0% 25%;
+ 
+}
+.text{
+  margin: 0 25% 0 25%;
+}
+/* CSS Formulário */
+/* Todos os elementos da página */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+  font-family: sans-serif;
+  color: #380B61;
+  margin-left: 7%;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+  font-family: sans-serif;
+  color: #380B61;
+  margin-left: 10%;
+} 
+
+#check{
+  display: inline-block;
+}
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+  border: 0;
+}
+
+/* Elemento de tag <body> */
+
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #59429d;
+  border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+  display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+  clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+  margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+  margin-bottom: 0.2em;
+  color: #59429d;
+  display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+  float:  left;
+  margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+  padding: 0.2em;
+  border: 1px solid #59429d;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+  padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+  background: #E0E0F8;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+  font-size: 1.2em;
+  background: #59429d;
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  position: absolute;
+  
+  margin-top: 10px;
+  transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+  background: #CCBBFF;
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+  text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+  cursor: pointer;
+}
+.formcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0% 25% 5% 25%;
+ 
+}
+.campoem{
+  text-align: center;
+}
+/* fIM FORM */
+
+
+@media (max-width:425px){
+
+  .product-card {
+    flex: 0 0 auto;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   
+    width:30%;
+  
+    margin-left: 13%;
+  margin-top: 2%;
+margin-bottom: 2%;
+  
+  }
+  
+
+  .product-info {
+    width: 100%;
+    height: 50%;
+    padding-top: 1vw;
+  
+  }
+  
+  .product-brand {
+    text-transform: uppercase;
+    font-size: 4vw;
+  }
+  
+  .product-short-description {
+    width: 100%;
+    height: 20%;
+    line-height: 100%;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+  
+    font-size: 1.7vw;
+  }
+#timer{
+
+  margin-top: 0%;
+}
+
+
+  }

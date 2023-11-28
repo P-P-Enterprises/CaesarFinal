@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="Logo " src="logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item" id="nav-text1">
+            <a class="nav-link active" aria-current="page" href="pesquis.html">Roupas</a>
+          </li>
+          <li class="nav-item" id="nav-text2">
+            <a class="nav-link active" aria-current="page" href="Tendências.html">Tendências</a>
+          </li>
+          <li class="nav-item" id="nav-text3">
+            <a class="nav-link active" aria-current="page" href="acessórios.html">Acessorios</a>
+          </li>
+          <li class="nav-item" id="nav-text4">
+            <a class="nav-link active" aria-current="page" href="missão.html">Nossa missão</a>
+          </li>
+          <li class="nav-item " id="nav-text5">
+            <a class="nav-link active" aria-current="page" href="contato.html">Contate-nos</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+
+     
+   
+    
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/APROVEITE.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    <div class="cardbutton">
+        <button  class="buttonpesq" id="streetwearBtn">Streetwear</button>
+  <button class="buttonpesq" id="casualBtn">Camisas Casual</button>
+  <button  class="buttonpesq" id="socialBtn">Camisas Social</button>
+
+  <button class="buttonpesq"  id="bonesBtn">Bonés</button>
+  <button  class="buttonpesq" id="tenisBtn">Tênis</button>
+  <button  class="buttonpesq" id="correntesBtn">Acessórios</button>
+ 
+  </div>
+  
+    <div id="Div-Princ"> </div>
+  
+    <div id="offcanvas2" class="offcanvas2">
+      <div class="offcanvas-content2">
+
+        <h2>Detalhes do Produto</h2>
+       <div class="principal-conteudo">
+        <img id="productImage" class="product-image" src="" alt="Product Image">
+        <div class="textos">
+          <p id="productNames"  ></p>
+
+          <p id="productDescriptions"></p>
+          <p>PREÇO INCIAL</p>
+          <P> PREÇO FINAL</P>
+      
+          <P>COR:</P>
+          <input type="color" id="head" name="head" value="#e66465" />
+     
+        </div>
+      </div>
+      <div class="posbutton">
+        <button  class="buttonpesq3"onclick="closeOffCanvas()">Fechar</button>
+      </div>
+      </div>
+    </div>
+
+</div>
+<div class="container" style="margin-top: 10%;">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 P&P Enterprises, Inc</p>
+
+    <img src="logo.png" alt="">
+    <ul class="nav col-md-4 justify-content-end">
+      
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contato</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Tendências</a></li>
+      
+    </ul>
+    
+
+</footer>
+
+<script >
+    const items = [
+    {
+      title: 'Calça Cargo branca',
+      image: 'image 199.png',
+      estilo: 'StreetWear',
+      id: 1,
+    },
+    {
+      title: 'Moletom Preto',
+      image: 'image 218.png',
+      estilo: 'StreetWear',
+      id: 2,
+    },
+    {
+        title: 'Camisa streetwear lisa',
+        image: 'Rectangle 43.png',
+        estilo:'StreetWear',
+      id: 3,
+      },
+      {
+        title: 'Camisa Oversized',
+        image: 'image 200.png',
+        estilo:'StreetWear',
+        id: 4,
+      },
+      {
+        title: 'Camis Streetwear lisa',
+        image: 'image 203.png',
+        estilo: 'StreetWear',
+        id: 5,
+      },
+            {
+        title: 'Streetwear simple',
+        image: 'image 96.png',
+        estilo:'StreetWear',
+        id: 6,
+      },
+
+      {
+        title: 'Calça Cargo',
+        image: 'image 202.png',
+        description: 'StreetWear.',
+        id: 7,
+      },
+      {
+        title: 'Camisa Vans',
+        image:'image 98.png',
+        estilo:'StreetWear',
+        id: 8,
+      },
+      {
+        title: 'Camisa Oversized Larga',
+        image: 'image 222.png',
+        estilo:'StreetWear',
+        id: 9,
+      },
+      {
+        title: 'Camisa StreetWear No Age',
+        image: 'image 223.png',
+        estilo: 'StreetWear',
+        id: 10,
+      },
+      {
+        title: 'Moleton StreetWear Americano',
+        image: 'image 224.png',
+        estilo: 'StreetWear',
+        id: 11,
+      },
+      {
+        title: 'Camisa Manifity Preta',
+        image: 'image 225.png',
+        estilo: 'StreetWear',
+        id: 12,
+      },
+      {
+        title: 'Camisa Polo Estampada',
+        image: 'image 226.png',
+        estilo: 'Casual',
+        id: 13,
+      },
+      {
+        title: 'Camisa Manga Curta',
+        image: 'image 227.png',
+        estilo: 'Casual',
+        id: 14,
+      },
+      {
+        title: 'Camisa Basic Cinza',
+        image: 'image 162.png',
+        estilo: 'Casual',
+        id: 15,
+      },
+      {
+        title: 'Camisa Masculina Paris',
+        image: 'image 228.png',
+        estilo: 'Casual',
+        id: 15,
+      },
+      {
+        title: 'Camisa Gola Careca',
+        image: 'image 229.png',
+        estilo:'Casual',
+        id: 16,
+      },
+      {
+        title: 'Camisa Masculina Vermelha',
+        image: 'image 230.png',
+        stilo:'Casual',
+        id: 17,
+      },
+
+      {
+        title: 'Terno Fitipaldi',
+        image: 'image 75.png',
+        estilo:'Social',
+        id: 18,
+      },
+      {
+        title: 'Camisa Basic Plus',
+        image: 'image 74.png',
+        estilo:'Social',
+        id: 19,
+      },
+      {
+        title: 'Camisa Social SlimFit',
+        image: 'image 231.png',
+        estilo:'Social',
+        id: 20,
+      },
+      {
+        title: 'Camisa Social Manga Comprida',
+        image: 'image 232.png',
+        Social: 'Social',
+        id: 21,
+      },
+      {
+        title: 'Blusa Social Slim Luxo',
+        image: 'image 233.png',
+        estilo:'Social',
+        id: 22,
+      },
+      {
+        title: 'Camisa Social Manga Curta',
+        image: 'image 234.png',
+        estilo:'Social',
+        id: 23,
+      },
+      {
+        title: 'Corrente Cordão Cruz',
+        image: 'Rectangle 50.png',
+        estilo: 'Acessórios',
+        description: 'lorem ipsum abuuuuuuu',
+        id: 29,
+      },
+      {
+        title: 'Corrente Masculina',
+        image: 'image 207.png',
+        estilo: 'Acessórios',
+        description: 'lorem ipsum abuuuuuuu',
+        id: 30,
+      },
+      {
+        title: 'Boné Beisebol Gráfico',
+        image: 'image 206.png',
+        estilo: 'Acessórios',
+        id: 31,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Nike Branco',
+        image: 'Rectangle 49.png',
+        estilo: 'Acessórios',
+        id: 32,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné NYC Masculino',
+        image: 'image 239.png',
+        estilo: 'Acessórios',
+        id: 33,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Pathc Masculino',
+        image: 'image 238.png',
+        estilo: 'Acessórios',
+        id: 34,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Pulseira Ouro',
+        image: 'image 237.png',
+        estilo: 'Acessórios',
+        id: 35,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Pulseira Masculina Vitale',
+        image: 'image 236.png',
+        estilo: 'Acessórios',
+        id: 36,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Relógio Masculino',
+        image: 'image 204.png',
+        estilo: 'Acessórios',
+        id: 37,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Relógio Champion',
+        image: 'image 211.png',
+        estilo: 'Acessórios',
+        id: 38,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Relógio Masculino',
+        image: 'image 212.png',
+        estilo: 'Acessórios',
+        id: 39,
+      },
+      {
+        title: 'Relógio Luxo Masculino',
+        image: 'image 235.png',
+        estilo: 'Acessórios',
+        id: 40,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Aba Curva',
+        image: 'image 40.png',
+        estilo: 'Bonés',
+        id: 41,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Beisebol Gráfico',
+        image: 'image 206 (1).png',
+        estilo: 'Bonés',
+        id: 42,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Nike Branco',
+        image: 'Rectangle 49 (1).png',
+        estilo: 'Acessórios',
+        id: 43,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Estilo Califórnia',
+        image: 'image 240.png',
+        estilo: 'Bonés',
+        id: 44,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Wasc',
+        image:'image 241.png',
+        estilo: 'Bonés',
+        id: 45,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Rachel Manzano',
+        image: 'image 242.png',
+        estilo: 'Bonés',
+        id: 46,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Hype Strapback',
+        image: 'image 243.png',
+        estilo: 'Bonés',
+        id: 47,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Boné Cinza Masculino',
+        image: 'image 244.png',
+        estilo: 'Bonés',
+        id: 48,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Tênis Dunk Nike',
+        image: 'image 205.png',
+        estilo: 'Tênis',
+        id: 49,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Tênis Adidas',
+        image: 'image 209.png',
+        estilo: 'Tênis',
+        id: 50,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Tênis Star Adidas',
+        image: 'image 210.png',
+        estilo: 'Tênis',
+        id: 51,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Tênis Skate Nude',
+        image: 'image 245.png',
+        estilo: 'Tênis',
+        id: 52,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Tênis branco',
+        image: 'image 246.png',
+        estilo: 'Tênis',
+        id: 53,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Tênis Polo Preto',
+        image: 'image 247.png',
+        estilo: 'Tênis',
+        id: 54,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+      {
+        title: 'Tênis Esportivo',
+        image: 'image 248.png',
+       esilo: 'Tênis',
+        id: 55,
+        description: 'lorem ipsum abuuuuuuu'
+      },
+    
+   
+
+
+  ];
+      
+
+    // ... outros objetos
+
+
+  
+  
+  ////////////// Objetos acima
+
+
+
+  /////////////// aqui embaixo as funções começam 
+  
+// Função para criar elementos de produto e adicionar ao container
+
+function showAllItems(items) {
+  const productsContainer = document.getElementById('Div-Princ');
+
+  if (productsContainer) {
+    productsContainer.innerHTML = '';
+
+    items.forEach(item => {
+     
+      const productDiv = document.createElement('div');
+        const productName = document.createElement('h3');
+        const productImage = document.createElement('img');
+        const productDescription = document.createElement('p');
+        const productButton = document.createElement('button');
+       var nome = productName.textContent
+var desc =  productDescription.textContent
+        productName.textContent = item.title ? item.title : '';
+        productDescription.textContent = item.description ? item.description : '';
+        productImage.src = `./Api de Roupas/Objeto/${item.image}`;
+productButton.textContent = 'Comprar';
+    
+      productImage.src = `./Api de Roupas/Objeto/${item.image}`;
+
+      productDiv.classList.add('headproduct2');
+        productName.classList.add('vlrfnl');
+        productImage.classList.add('img-box2');
+        productDescription.classList.add('vlrinc');
+  
+        productButton.classList.add('buttonpesq2', 'openOffCanvasBtn');
+        productDiv.appendChild(productImage);
+        productDiv.appendChild(productName);
+        productDiv.appendChild(productDescription);
+        productDiv.appendChild(productButton);
+        productsContainer.appendChild(productDiv);
+    });
+
+  } else {
+    console.error('Elemento Div-Princ não encontrado.');
+  }
+}
+
+// Função para filtrar os itens por categoria
+
+
+// Adiciona os event listeners aos botões de 
+
+
+
+function filterByCategory(category, items) {
+  const normalizedCategory = category ? category.trim().toLowerCase().normalize() : '';
+
+  const productsContainer = document.getElementById('Div-Princ');
+
+
+  if (productsContainer) {
+    productsContainer.innerHTML = '';
+
+    items.forEach(item => {
+   
+     
+
+      const normalizedItemCategory = item.estilo ? item.estilo.trim().toLowerCase().normalize() : '';
+
+      if (normalizedItemCategory === normalizedCategory) {
+        const productDiv = document.createElement('div');
+        const productName = document.createElement('h3');
+        const productImage = document.createElement('img');
+        const productDescription = document.createElement('p');
+        const productButton = document.createElement('button');
+
+
+   
+        productName.textContent = item.title ? item.title : '';
+        productDescription.textContent = item.description ? item.description : '';
+        productImage.src = `./Api de Roupas/Objeto/${item.image}`;
+productButton.textContent = 'Comprar';
+productButton.classList.add('buttonpesq2', 'openOffCanvasBtn');
+
+
+
+        productDiv.classList.add('headproduct2');
+        productName.classList.add('vlrfnl');
+        productImage.classList.add('img-box2');
+        productDescription.classList.add('vlrinc');
+        var nome = productName.textContent
+var desc =  productDescription.textContent
+        productButton.classList.add('buttonpesq2', 'openOffCanvasBtn');
+        productDiv.appendChild(productImage);
+        productDiv.appendChild(productName);
+        productDiv.appendChild(productDescription);
+        productDiv.appendChild(productButton);
+        productsContainer.appendChild(productDiv);
+      
+      }
+    });
+  } else {
+    console.error('Elemento Div-Princ não encontrado.');
+  }
+
+
+
+}
+
+// Exibir todos os itens inicialmente
+showAllItems(items);
+
+function filterButtonClicked(category) {
+  // Chama a função filterByCategory com a categoria desejada e os itens completos
+  filterByCategory(category, items);
+}
+
+// Adiciona os event listeners aos botões de filtro
+document.getElementById('streetwearBtn').addEventListener('click', () => filterButtonClicked('streetwear'));
+document.getElementById('casualBtn').addEventListener('click', () => filterButtonClicked('casual'));
+document.getElementById('socialBtn').addEventListener('click', () => filterButtonClicked('social'));
+document.getElementById('bonesBtn').addEventListener('click', () => filterButtonClicked('bonés'));
+document.getElementById('tenisBtn').addEventListener('click', () => filterButtonClicked('tênis'));
+document.getElementById('correntesBtn').addEventListener('click', () => filterButtonClicked('acessórios'));
+
+
+// Exibir todos os itens inicialmente
+showAllItems(items);
+
+function filterButtonClicked(category) {
+  // Chama a função filterByCategory com a categoria desejada e os itens completos
+  filterByCategory(category, items);
+}
+
+  // Event listener para abrir o off canvas
+  document.getElementById('Div-Princ').addEventListener('click', function (event) {
+    if (event.target && event.target.classList.contains('openOffCanvasBtn')) {
+      const productNameElement = event.target.parentNode.querySelector('h3.vlrfnl');
+      const productDescriptionElement = event.target.parentNode.querySelector('p.vlrinc');
+      const productImageElement = event.target.parentNode.querySelector('img.img-box2');
+
+      if (productNameElement && productDescriptionElement && productImageElement) {
+        const productName = productNameElement.textContent;
+        const productDescription = productDescriptionElement.textContent;
+        const productImgSrc = productImageElement.src;
+
+        const offcanvas = document.querySelector("#offcanvas2");
+        const productNames = document.querySelector("#productNames");
+        const productDescriptions = document.querySelector("#productDescriptions");
+        const productImage = document.querySelector("#productImage");
+
+        if (offcanvas && productNames && productDescriptions && productImage) {
+          productNames.innerText = productName;
+          productDescriptions.innerText = productDescription;
+          productImage.src = productImgSrc;
+
+          offcanvas.style.display = 'block';
+          productNames.classList.add('headproduct2');
+          productDescriptions.classList.add('vlrfnl');
+          productImage.classList.add('img-box3')
+        }
+      }
+    }
+  });
+
+  // Função para fechar o off canvas
+  function closeOffCanvas() {
+    const offcanvas = document.getElementById('offcanvas2');
+    if (offcanvas) {
+      offcanvas.style.display = 'none';
+    }
+  }
+
+
+
+  
+</script>
+</body>
+</html>

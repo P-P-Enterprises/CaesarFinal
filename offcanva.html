@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="openOffCanvasBtn">Abrir Off-canvas</button>
+
+    <!-- Off-canvas com informações do produto -->
+    <div class="offcanvas" style="display: none;">
+      <div class="offcanvas-content">
+        <button id="closeOffCanvasBtn">Fechar</button>
+        <h2 id="productName"></h2>
+        <p id="productDescription"></p>
+        <!-- Outras informações do produto -->
+      </div>
+    </div>
+
+    function openOffCanvas() {
+        document.getElementById('productName').innerText = item.name;
+        document.getElementById('productDescription').innerText = item.description;
+      
+   
+        const offcanvas = document.querySelector('.offcanvas');
+        offcanvas.style.display = 'block';
+      }
+      
+     
+      function closeOffCanvas() {
+        const offcanvas = document.querySelector('.offcanvas');
+        offcanvas.style.display = 'none';
+      }
+      
+    
+      document.getElementByClass('openOffCanvasBtn').addEventListener('click', openOffCanvas);
+      
+     
+      document.getElementById('closeOffCanvasBtn').addEventListener('click', closeOffCanvas);
+<script src="json.js"></script>
+</body>
+</html>
