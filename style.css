@@ -820,7 +820,7 @@ fieldset.grupo .campo {
 /* fIM FORM */
 
 
-@media (max-width:600px){
+@media (max-width:600px) and (min-width:100px){
 
   .product-card {
     flex: 0 0 auto;
