@@ -658,10 +658,11 @@ align-items: center;
 }
 
 .linha{
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0);
   background-color: #000000;
-  height: 2vw;
-  background-size: 1vw;
+  height: 0.2vw;
+  background-size: 0.1vw;
+ 
 }
 
 .tt::first-letter{
