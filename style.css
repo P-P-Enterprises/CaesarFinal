@@ -653,11 +653,14 @@ width: 120%;
 background: none;
 }
 
-
-.tittle1::first-letter {
-
+.linha{
   color: #EACD91;
 }
+
+.tt::first-letter{
+  color: #EACD91;
+}
+
 
 .tittle3 {
   color: #000000;
