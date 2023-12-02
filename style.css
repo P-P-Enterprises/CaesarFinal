@@ -415,7 +415,7 @@ width: 65%;
 .textos{
   display: flex;
   flex-direction:column;
-  margin-left: 10%;
+  margin-left: 8%;
   padding: 2%;
 
 }
@@ -428,7 +428,7 @@ width: 65%;
   color: #E0E0F8;
   background-color: #000000;
   height: 10%;
-  padding: 1%;
+
 }
 .offcanvas-content img {
  width: 100%;
@@ -471,7 +471,7 @@ height: 8%;
 
 .discount-tag {
   position: absolute;
-  background: #000000e7;
+  background: #000000a8;
   padding: 2%;
   border-radius: 15%;
   color: #ffffff;
