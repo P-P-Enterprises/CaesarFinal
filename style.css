@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 .header {
   background-color: gray;
   width: 100%;
@@ -403,27 +405,12 @@ width: 25%;
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1%;
-width: 65%;
- height: 65%;
+  max-width: 80%;
+  max-height: 80%;
   overflow: auto;
   text-align: center;
-  display: flex;
-  flex-direction:row-reverse;
 }
-.textos{
-  display: flex;
-  flex-direction:column;
-  margin-left: 10%;
-  padding: 2%;
 
-}
-.but-card
-{
-  margin: 1%;
-  display: flex;
-  flex-direction:column;
-  margin-left: 5%;
-}
 .offcanvas-content img {
  width: 100%;
   height: auto;
@@ -858,22 +845,29 @@ footer{
   border-top: gray 1px solid;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
   display: inline-flex;
+  justify-content: space-between;
 }
 .footermen{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  
 }
-
+.logofoot{
+  margin-right: -110px;
+  text-align: center;
+}
 .pfooter{
   color: black; 
   text-decoration: dotted;
   font-size: 16px;
+  font-family: 'Nova Square', sans-serif;
+  margin-left: 10px;
 }
 .afooter{
   text-decoration: none;
 }
+
 
 @media (max-width:600px) and (min-width:100px){
 
@@ -916,29 +910,31 @@ margin-bottom: 2%;
 
   margin-top: 0%;
 }
-.footer{
+footer{
   border-top: gray 1px solid;
   align-items: center;
-  text-align: center;
-  
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
 }
 .footermen{
   display: flex;
   flex-direction: column;
-  margin-left: 0px;
-  align-items: start;
+  
 }
-
+.logofoot{
+  text-align: center;
+  width: 100px;
+  margin-right: 30px;
+}
 .pfooter{
   color: black; 
   text-decoration: dotted;
-  font-size: 10px;
+  font-size: 3vw;
+  font-family: 'Nova Square', sans-serif;
 }
 .afooter{
   text-decoration: none;
 }
 
-  }
-
-
-  
+}
