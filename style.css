@@ -478,8 +478,7 @@ p {
 
   display: flex;
   flex-direction: column;
-  margin-right: 25%;
-margin-bottom: 86%;
+ 
 color: #000000;
   height: 10%;
   padding: 5%;
@@ -488,7 +487,7 @@ color: #000000;
 
 .offcanvas-content img {
   width: 150%;
-  height: 80%;
+  height: 100%;
   margin-top: 15%;
   margin-right: 10%;
   align-items: center;
