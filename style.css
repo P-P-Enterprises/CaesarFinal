@@ -1066,4 +1066,61 @@ footer {
     text-decoration: none;
   }
 
+
+  .offcanvas-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1%;
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    flex-direction:column ;
+  
+    justify-content: center;
+  }
+  
+  .textos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8%;
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 3%;
+  }
+  
+  .but-card {
+  
+    display: flex;
+    flex-direction: column;
+   
+  color: #000000;
+    height: 10%;
+    padding: 5%;
+    font-size: 1.5vw;
+  }
+  
+  .offcanvas-content img {
+    width: 100%;
+    height: 50%;
+  
+  
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  
+
+
+
 }
