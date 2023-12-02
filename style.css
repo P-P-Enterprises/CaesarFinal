@@ -408,7 +408,10 @@ width: 25%;
   overflow: auto;
   text-align: center;
 }
-
+.textos{
+  display: flex;
+  flex-direction:column;
+}
 .offcanvas-content img {
  width: 100%;
   height: auto;
