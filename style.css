@@ -413,7 +413,8 @@ width: 65%;
 .textos{
   display: flex;
   flex-direction:column;
-  margin-right: 10%;
+  margin-left: 10%;
+  padding: 2%;
 
 }
 .but-card
