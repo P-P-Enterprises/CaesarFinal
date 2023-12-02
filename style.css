@@ -12,7 +12,7 @@
 }
 
 .nav-item {
-  font-size: 10px;
+  font-size: 1vw;
 }
 
 .imgnav {
@@ -83,18 +83,52 @@ padding-bottom:3%;
 
 .product-card {
   flex: 0 0 auto;
-  box-shadow: rgba(255, 0, 0, 0.801) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
- 
-  width: 19.5%;
-  height: 6%;
-margin-left: 5%;
-margin-top: 2%;
-margin-bottom: 2%;
-border-radius: 2%;
-}
-.product-card:hover{
-  width:19.52%;
+  box-shadow: -4px 29px 152px -47px rgba(0,0,0,0.68);
+  width: 25%; /* Ajustado para ocupar 19% do espaço */
+  height: 40vw; /* Altura proporcional ao width para manter a relação de aspecto */
+  margin: 2% 2% 2% 0; /* Espaçamento uniforme entre os cartões */
+  border-radius: 3%;
 
+}
+
+.product-image img {
+  width: 100%; /* Imagem ocupa 100% do espaço disponível */
+  height: 100%; /* Para manter a proporção da imagem */
+
+}
+
+.product-info {
+  padding: 2% 0; /* Espaçamento interno para informações do produto */
+  text-align: center;
+  font-size: 1vw;
+}
+
+.product-brand {
+  font-size: 2vw; /* Tamanho do texto da marca do produto */
+  margin-bottom: 1%; /* Espaçamento entre a marca e a descrição */
+}
+
+.product-short-description {
+  font-size: 1.0vw; /* Tamanho do texto da descrição do produto */
+  opacity: 0.7;
+  margin-bottom: 0vw;
+}
+
+.price, .actual-price {
+  font-size: 2vw; /* Tamanho do texto do preço */
+  display: block; /* Para que os preços fiquem em linhas separadas */
+  margin-top: 1%; /* Espaçamento entre os preços */
+}
+
+.card-btn {
+  font-size: 1.8vw; /* Tamanho do texto do botão */
+  padding: 1% 3%; /* Espaçamento interno do botão */
+   /* Espaçamento acima do botão */
+  border-radius: 5px;
+}
+
+.discount-tag {
+  font-size: 2vw; /* Tamanho do texto da tag de desconto */
 }
 .offcanvas {
   position: fixed;
@@ -402,22 +436,24 @@ width: 25%;
   width: 100%;
   overflow: hidden;
   height: auto;
+  margin-bottom: 0.1vw;
 }
 
 .product-thumb {
 width:100%;
-height: 10%;
+height: 8%;
   object-fit:cover;
   padding: 0%;
   margin: 0%;
+  border-radius: 0vw;
 }
 
 .discount-tag {
   position: absolute;
-  background: #fff;
-  padding: 1%;
-  border-radius: 5%;
-  color: #ff7d7d;
+  background: #000000e7;
+  padding: 2%;
+  border-radius: 15%;
+  color: #ffffff;
   right: 2%;
   top: 2%;
   text-transform: capitalize;
@@ -433,53 +469,43 @@ height: 10%;
  background: none;
  padding: 2%;
 color: black;
+background: #000000;
+color: #ffffff;
 }
 
 
 
 .card-btn:hover {
-  background: #000000;
-  color: #ffffff;
+
+  background: rgb(94, 81, 56);
+  color: rgb(255, 255, 255);
   padding: 2%;
   border-radius: 9%;
 }
 
-.product-info {
-  width: 100%;
-  height: 100%;
-
-
-}
 
 .product-brand {
   text-transform: uppercase;
-  font-size: 3vw;
+  font-size: 2vw;
 
   text-align: center;
 }
 
-.product-short-description {
-  
- 
-  opacity: 0.5;
-  text-transform: capitalize;
-margin-top: 0%;
-  font-size: 1.3vw;
-  text-align: center;
-}
+
 
 
 .price {
   font-weight: 900;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   margin-bottom: 1%;
+ margin-top: 0%;
 }
 
 .actual-price {
   margin-left: 2%;
   opacity: 0.5;
   text-decoration: line-through;
-  font-size: 1.8vw;
+  font-size: 1.2vw;
   color: #ff1100;
   margin-bottom: 1%;
 }
@@ -646,31 +672,31 @@ margin-top: -1.5vw;
 
 #nav-text1 {
 
-  font-size: 1.5vw;
+  font-size: 1vw;
 
 }
 
 #nav-text2 {
 
-  font-size: 1.5vw;
+  font-size: 1vw;
 
 }
 
 #nav-text3 {
 
-  font-size: 1.5vw;
+  font-size: 1vw;
 
 }
 
 #nav-text4 {
 
-  font-size: 1.5vw;
+  font-size: 1vw;
 
 }
 
 #nav-text5 {
 
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 .beckhum {
@@ -827,7 +853,7 @@ fieldset.grupo .campo {
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
    
     width:30%;
-  
+  height: 40%;
     margin-left: 13%;
   margin-top: 2%;
 margin-bottom: 2%;
@@ -862,5 +888,6 @@ margin-bottom: 2%;
   margin-top: 0%;
 }
 
+}
 
-  }
+  
