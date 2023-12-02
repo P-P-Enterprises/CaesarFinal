@@ -651,6 +651,8 @@ width: 120%;
   margin-left: 3%;
   margin-top: 1.5%;
 background: none;
+display: flex;
+flex-direction: row;
 }
 
 .linha{
