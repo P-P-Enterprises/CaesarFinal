@@ -650,7 +650,13 @@ width: 120%;
   margin-bottom: 1%;
   margin-left: 3%;
   margin-top: 1.5%;
-  
+
+}
+.tittlediv{
+  content: " ";
+  background-color: #EACD91;
+  height: 0.1%;
+  width: 100%;
 }
 
 .tittle1::first-letter {
