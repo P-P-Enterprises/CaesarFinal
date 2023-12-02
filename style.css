@@ -1141,10 +1141,10 @@ padding-bottom: 0%;
     font-size: 3vw;
     width: 120%;
   }
+  .carousel-control-next, .carousel-control-prev {
 
-  .button{
-
-opacity: 0.4nnn;
-height: 10%;
+width: 5%;
+opacity: 0.4;
+height: 5%;
   }
 }
