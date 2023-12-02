@@ -469,6 +469,9 @@ p {
   padding: 2%;
   height: 100%;
   width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .but-card {
@@ -480,14 +483,18 @@ margin-bottom: 86%;
 color: #000000;
   height: 10%;
   padding: 5%;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 .offcanvas-content img {
-  width: 100%;
-  height: 60%;
+  width: 120%;
+  height: 80%;
   margin-top: 15%;
   margin-right: 10%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 
