@@ -1088,7 +1088,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin-right: 8%;
-
+margin-top: 0%;
     height: 100%;
     width: 100%;
     align-items: center;
@@ -1112,8 +1112,8 @@ footer {
   }
   
   .offcanvas-content img {
-    width: 60%;
-    height: 50%;
+    width: 80%;
+    height: 60%;
   
   margin-bottom: 0%;
     align-items: center;
