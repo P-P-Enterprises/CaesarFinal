@@ -513,8 +513,14 @@ color: #ffffff;
 }
 
 
+#productNames{
+  font-size: 4vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#productDescriptions{
+  font-size: 2vw;
 
-
+}
 .price {
   font-weight: 900;
   font-size: 1.5vw;
