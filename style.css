@@ -652,13 +652,7 @@ width: 120%;
   margin-top: 1.5%;
 background: none;
 }
-.tittlediv{
-  content: " ";
-  background: #EACD91;
-  height: 0.1vw;
-  width: 100%;
-  margin-bottom: 5%;
-}
+
 
 .tittle1::first-letter {
 
