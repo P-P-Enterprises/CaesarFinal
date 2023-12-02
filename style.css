@@ -75,8 +75,8 @@ p {
   padding: 0;
   display: flex;
   overflow-x: auto;
-overflow-y: scroll;
-padding-bottom:3%;
+  overflow-y: scroll;
+  padding-bottom: 3%;
 }
 
 .product-container::-webkit-scrollbar {
@@ -85,53 +85,70 @@ padding-bottom:3%;
 
 .product-card {
   flex: 0 0 auto;
-  box-shadow: -4px 29px 152px -47px rgba(0,0,0,0.68);
-  width: 25%; /* Ajustado para ocupar 19% do espaço */
-  height: 40vw; /* Altura proporcional ao width para manter a relação de aspecto */
-  margin: 2% 2% 2% 0; /* Espaçamento uniforme entre os cartões */
+  box-shadow: -4px 29px 152px -47px rgba(0, 0, 0, 0.68);
+  width: 25%;
+  /* Ajustado para ocupar 19% do espaço */
+  height: 40vw;
+  /* Altura proporcional ao width para manter a relação de aspecto */
+  margin: 2% 2% 2% 0;
+  /* Espaçamento uniforme entre os cartões */
   border-radius: 3%;
 
 }
 
 .product-image img {
-  width: 100%; /* Imagem ocupa 100% do espaço disponível */
-  height: 100%; /* Para manter a proporção da imagem */
+  width: 100%;
+  /* Imagem ocupa 100% do espaço disponível */
+  height: 100%;
+  /* Para manter a proporção da imagem */
 
 }
 
 .product-info {
-  padding: 2% 0; /* Espaçamento interno para informações do produto */
+  padding: 2% 0;
+  /* Espaçamento interno para informações do produto */
   text-align: center;
   font-size: 1vw;
 }
 
 .product-brand {
-  font-size: 2vw; /* Tamanho do texto da marca do produto */
-  margin-bottom: 1%; /* Espaçamento entre a marca e a descrição */
+  font-size: 2vw;
+  /* Tamanho do texto da marca do produto */
+  margin-bottom: 1%;
+  /* Espaçamento entre a marca e a descrição */
 }
 
 .product-short-description {
-  font-size: 1.0vw; /* Tamanho do texto da descrição do produto */
+  font-size: 1.0vw;
+  /* Tamanho do texto da descrição do produto */
   opacity: 0.7;
   margin-bottom: 0vw;
 }
 
-.price, .actual-price {
-  font-size: 2vw; /* Tamanho do texto do preço */
-  display: block; /* Para que os preços fiquem em linhas separadas */
-  margin-top: 1%; /* Espaçamento entre os preços */
+.price,
+.actual-price {
+  font-size: 2vw;
+  /* Tamanho do texto do preço */
+  display: block;
+  /* Para que os preços fiquem em linhas separadas */
+  margin-top: 1%;
+  /* Espaçamento entre os preços */
 }
 
 .card-btn {
-  font-size: 1.8vw; /* Tamanho do texto do botão */
-  padding: 1% 3%; /* Espaçamento interno do botão */
-   /* Espaçamento acima do botão */
+  font-size: 1.8vw;
+  /* Tamanho do texto do botão */
+  padding: 1% 3%;
+  /* Espaçamento interno do botão */
+  /* Espaçamento acima do botão */
   border-radius: 5px;
 }
 
 .discount-tag {
-  font-size: 2vw; /* Tamanho do texto da tag de desconto */
+  font-size: 2vw;
+  /* Tamanho do texto da tag de desconto */
 }
+
 .offcanvas {
   position: fixed;
   top: 0;
@@ -142,12 +159,13 @@ padding-bottom:3%;
   border-right: 1px solid #ccc;
   transition: left 0.3s ease;
 }
+
 .offcanvas.show {
   left: 0;
 }
 
 
-#productNames{
+#productNames {
   font-size: 2vw;
   text-align: center;
 }
@@ -159,228 +177,260 @@ padding-bottom:3%;
   width: 29%;
 
 }
-.cardbutton{
-  justify-content:center;
+
+.cardbutton {
+  justify-content: center;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
- 
+
 }
-.cardbutton2{
-  justify-content:center;
+
+.cardbutton2 {
+  justify-content: center;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
 }
-.buttonpesq{
+
+.buttonpesq {
   text-align: center;
   background-color: aliceblue;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
- font-size: 1.8vw;
- border: none;
-border-radius: 8%;
- padding: 1%;
-margin-left: 1%;
-margin-right: 1%;
-margin-top: 2%;
+  font-size: 1.8vw;
+  border: none;
+  border-radius: 8%;
+  padding: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
 }
-.buttonpesq2{
+
+.buttonpesq2 {
   color: #ffffff;
   text-align: center;
   background-color: rgb(0, 0, 0);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
- font-size: 1.8vw;
- border: none;
-border-radius: 7%;
- padding: 1%;
-margin-left: 1%;
-margin-right: 1%;
-margin-top: 2%;
-margin-bottom: 2%;
+  font-size: 1.8vw;
+  border: none;
+  border-radius: 7%;
+  padding: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-.buttonpesq3{
+
+.buttonpesq3 {
   color: rgb(0, 0, 0);
   text-align: center;
   background-color: rgb(255, 255, 255);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
- font-size: 1.8vw;
- border: none;
-border-radius: 7%;
- padding: 1%;
-margin-left: 1%;
-margin-right: 1%;
-margin-top: 5%;
-margin-bottom: 2%;
-width: 10%;
+  font-size: 1.8vw;
+  border: none;
+  border-radius: 7%;
+  padding: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  width: 10%;
 
 
 }
-.posbutton{
-display: flex;
-text-align: center;
-justify-content: center;
-align-items: center;
+
+.posbutton {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
 }
-.buttonpesq2:hover{
+
+.buttonpesq2:hover {
   color: rgb(255, 255, 255);
-  background-color:#EACD91;
+  background-color: #EACD91;
   font-size: 1.9vw;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.685);
 }
-.buttonpesq3:hover{
+
+.buttonpesq3:hover {
   color: rgb(255, 255, 255);
-  background-color:#000000;
+  background-color: #000000;
   font-size: 1.9vw;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.685);
 }
-.buttonpesq:hover{
+
+.buttonpesq:hover {
   margin-left: 0%;
   font-size: 1.9vw;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
 }
-#Div-Princ{
-  justify-content:space-evenly;
+
+#Div-Princ {
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
   display: flex;
   align-content: center;
-flex-wrap: wrap;
-margin-left: 2%;
-margin-right: 2%;
+  flex-wrap: wrap;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-.img-box {
-  width:15%;
-}
-  .img-box2 {
-       width:100%;
-    }
-    .img-box3{
 
-      height:20%;
-      width: 30%;
-      border-radius: 3%;
-    }
-    
-    .offcanvas2 {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
-      z-index: 9999;
-      display: none; /* Inicialmente oculto */
-    }
-    .textos{
-align-items: center;
-justify-content: center;
-display: flex;
-flex-direction: column;
-text-align: center;
-    }
-    
-    .offcanvas2 {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: 9999;
-      display: none;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .offcanvas-content2 {
-      text-align: center;
-      position: relative;
-      width: 100%; /* Ajuste conforme necessário */
-      max-width: 100%; /* Largura máxima do conteúdo */
-      max-height: 100%; /* Altura máxima do conteúdo */
-      overflow: auto;
-      background-color: #fff;
-      padding: 2%;
-      box-sizing: border-box;
-      border-radius: 10px; /* Borda arredondada */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
-    }
-    
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-    }
-    
-    /* Estilos para a imagem do produto */
-    .product-image {
-      width: 100%; /* Ajuste conforme necessário */
-      height: auto; /* Garante a proporção correta da imagem */
-      margin-bottom: 20px;
-      border-radius: 10px; /* Borda arredondada para a imagem */
-    }
-    #productImage2{
-      width: 25%; /* Ajuste conforme necessário */
-      height: auto; /* Garante a proporção correta da imagem */
-      margin-bottom: 20px;
-      border-radius: 10px; /* Borda arredondada para a imagem */
-    }
-   
-    /* Estilos para os textos dentro do off-canvas */
-    .textos {
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    /* Estilos para o botão de fechar */
-    .buttonpesq3 {
-      color: rgb(255, 255, 255);
-      background-color: #000000;
-      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-      font-size: 1.8vw;
-      border: none;
-      border-radius: 7%;
-      padding: 1%;
-      margin-top: 5%;
-      margin-bottom: 2%;
-      width: 10%;
-    }
-    
-    .buttonpesq3:hover {
-      color: rgb(255, 255, 255);
-      background-color: #000000;
-      font-size: 1.9vw;
-      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.685);
-    }
-    
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer; /* Cursor apontando para indicar que é clicável */
-    }
+.img-box {
+  width: 15%;
+}
+
+.img-box2 {
+  width: 100%;
+}
+
+.img-box3 {
+
+  height: 20%;
+  width: 30%;
+  border-radius: 3%;
+}
+
+.offcanvas2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fundo escuro semitransparente */
+  z-index: 9999;
+  display: none;
+  /* Inicialmente oculto */
+}
+
+.textos {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.offcanvas2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.offcanvas-content2 {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  /* Ajuste conforme necessário */
+  max-width: 100%;
+  /* Largura máxima do conteúdo */
+  max-height: 100%;
+  /* Altura máxima do conteúdo */
+  overflow: auto;
+  background-color: #fff;
+  padding: 2%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* Borda arredondada */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  /* Sombra */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para a imagem do produto */
+.product-image {
+  width: 100%;
+  /* Ajuste conforme necessário */
+  height: auto;
+  /* Garante a proporção correta da imagem */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* Borda arredondada para a imagem */
+}
+
+#productImage2 {
+  width: 25%;
+  /* Ajuste conforme necessário */
+  height: auto;
+  /* Garante a proporção correta da imagem */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* Borda arredondada para a imagem */
+}
+
+/* Estilos para os textos dentro do off-canvas */
+.textos {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Estilos para o botão de fechar */
+.buttonpesq3 {
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  font-size: 1.8vw;
+  border: none;
+  border-radius: 7%;
+  padding: 1%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  width: 10%;
+}
+
+.buttonpesq3:hover {
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  font-size: 1.9vw;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.685);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  /* Cursor apontando para indicar que é clicável */
+}
+
 .headproduct {
 
   text-align: center;
- 
+
 }
+
 .headproduct2 {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
   margin-top: 6%;
   margin-bottom: 6%;
   margin-left: 4%;
-width: 25%;
+  width: 25%;
 }
-.headproduct2:hover{
- 
+
+.headproduct2:hover {
+
   transform: scale(1.008);
 }
 
@@ -405,35 +455,37 @@ width: 25%;
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1%;
-width: 65%;
- height: 65%;
+  width: 65%;
+  height: 65%;
   overflow: auto;
   text-align: center;
   display: flex;
-  flex-direction:row-reverse;
+  flex-direction: row-reverse;
 }
-.textos{
+
+.textos {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin-left: 8%;
   padding: 2%;
-height: 100%;
+  height: 100%;
 }
-.but-card
-{
+
+.but-card {
 
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin-right: 10%;
 
 
   height: 10%;
-padding: 5%;
+  padding: 5%;
 }
+
 .offcanvas-content img {
- width: 50%;
- height: 50%;
-margin-top: 20%;
+  width: 60%;
+  height: 60%;
+  margin-top: 15%;
 }
 
 .card-bt {
@@ -452,6 +504,7 @@ margin-top: 20%;
 .card-bt.n {
   background-color: #f44336;
 }
+
 .product-image {
   position: relative;
   width: 100%;
@@ -461,9 +514,9 @@ margin-top: 20%;
 }
 
 .product-thumb {
-width:100%;
-height: 8%;
-  object-fit:cover;
+  width: 100%;
+  height: 8%;
+  object-fit: cover;
   padding: 0%;
   margin: 0%;
   border-radius: 0vw;
@@ -482,16 +535,16 @@ height: 8%;
 }
 
 .card-btn {
- text-align: center;
- border: none;
- margin-top: 2%;
- margin-bottom: 2%;
- font-size: 2vw;
- background: none;
- padding: 2%;
-color: black;
-background: #000000;
-color: #ffffff;
+  text-align: center;
+  border: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 2vw;
+  background: none;
+  padding: 2%;
+  color: black;
+  background: #000000;
+  color: #ffffff;
 }
 
 
@@ -513,19 +566,21 @@ color: #ffffff;
 }
 
 
-#productNames{
+#productNames {
   font-size: 3vw;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#productDescriptions{
+
+#productDescriptions {
   font-size: 2vw;
 
 }
+
 .price {
   font-weight: 900;
   font-size: 1.5vw;
   margin-bottom: 1%;
- margin-top: 0%;
+  margin-top: 0%;
 }
 
 .actual-price {
@@ -563,23 +618,24 @@ color: #ffffff;
 
 /*Slider cabuloso acima*/
 
-.time{
-font-size: 2vw;
-text-align: center;
-margin-top: 5%;
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+.time {
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.timer{
+
+.timer {
   color: #ffffff;
-background-color: #000000;
-border-radius: 15%;
-max-width: 35%;
-text-align: center;
-padding: 1%;
-box-shadow: rgba(255, 255, 255, 0) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: #000000;
+  border-radius: 15%;
+  max-width: 35%;
+  text-align: center;
+  padding: 1%;
+  box-shadow: rgba(255, 255, 255, 0) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 
@@ -595,24 +651,27 @@ box-shadow: rgba(255, 255, 255, 0) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25)
   margin-bottom: 1%;
   margin-left: 3%;
   margin-top: 1.5%;
-font-family: 'cursive';
+  font-family: 'cursive';
 
 }
-.tittle1::first-letter{
-  
+
+.tittle1::first-letter {
+
   color: #EACD91;
 }
-.tittle3{
+
+.tittle3 {
   color: #000000;
   font-size: 4vw;
   font-family: 'cursive';
 }
+
 .tittle2 {
   text-align: center;
   font-size: 3vw;
-color: #EACD91;
-margin-top: -1vw;
-font-family: 'cursive';
+  color: #EACD91;
+  margin-top: -1vw;
+  font-family: 'cursive';
 }
 
 .beck {
@@ -734,18 +793,21 @@ font-family: 'cursive';
   font-family: 'Stay Dreaming';
   text-shadow: 0px 8px 8.5px rgba(0, 0, 0, 0.445);
 }
-.contentmis{
+
+.contentmis {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
   margin: 5% 25% 0% 25%;
- 
+
 }
-.text{
+
+.text {
   margin: 0 25% 0 25%;
 }
+
 /* CSS Formulário */
 /* Todos os elementos da página */
 * {
@@ -758,16 +820,16 @@ font-family: 'cursive';
   font-family: sans-serif;
   color: #380B61;
   margin-left: 7%;
-} 
+}
 
 /* Elementos com o ID "subtitulo" */
 #subtitulo {
   font-family: sans-serif;
   color: #380B61;
   margin-left: 10%;
-} 
+}
 
-#check{
+#check {
   display: inline-block;
 }
 
@@ -780,7 +842,10 @@ fieldset {
 
 
 /* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
   font-family: sans-serif;
   font-size: 1em;
   color: #59429d;
@@ -788,7 +853,8 @@ input, select, textarea, button {
 }
 
 /* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before, .grupo:after {
+.grupo:before,
+.grupo:after {
   display: table;
 }
 
@@ -811,15 +877,18 @@ input, select, textarea, button {
 
 /* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
 fieldset.grupo .campo {
-  float:  left;
+  float: left;
   margin-right: 1em;
 }
 
 /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
   padding: 0.2em;
   border: 1px solid #59429d;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   display: block;
 }
 
@@ -829,7 +898,9 @@ fieldset.grupo .campo {
 }
 
 /* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
-.campo input:focus, .campo select:focus, .campo textarea:focus {
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
   background: #E0E0F8;
 }
 
@@ -841,10 +912,10 @@ fieldset.grupo .campo {
   margin-bottom: 1em;
   color: #ffffff;
   padding: 0.2em 0.6em;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   position: absolute;
-  
+
   margin-top: 10px;
   transform: translate(-50%, -50%)
 }
@@ -852,83 +923,91 @@ fieldset.grupo .campo {
 /* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
 .botao:hover {
   background: #CCBBFF;
-  box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
   text-shadow: none;
 }
 
 /* Elementos de classe botão e de tag <select> */
-.botao, select{
+.botao,
+select {
   cursor: pointer;
 }
-.formcon{
+
+.formcon {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
   margin: 0% 25% 5% 25%;
- 
+
 }
-.campoem{
+
+.campoem {
   text-align: center;
 }
+
 /* fIM FORM */
 /*footer*/
-footer{
+footer {
   border-top: gray 1px solid;
   align-items: center;
   width: 100%;
   display: inline-flex;
   justify-content: space-between;
 }
-.footermen{
+
+.footermen {
   display: flex;
   justify-content: space-between;
-  
+
 }
-.logofoot{
+
+.logofoot {
   margin-right: -110px;
   text-align: center;
 }
-.pfooter{
-  color: black; 
+
+.pfooter {
+  color: black;
   text-decoration: dotted;
   font-size: 16px;
   font-family: 'Nova Square', sans-serif;
   margin-left: 10px;
 }
-.afooter{
+
+.afooter {
   text-decoration: none;
 }
 
 
-@media (max-width:600px) and (min-width:100px){
+@media (max-width:600px) and (min-width:100px) {
 
   .product-card {
     flex: 0 0 auto;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-   
-    width:30%;
-  height: 40%;
+
+    width: 30%;
+    height: 40%;
     margin-left: 13%;
-  margin-top: 2%;
-margin-bottom: 2%;
-  
+    margin-top: 2%;
+    margin-bottom: 2%;
+
   }
-  
+
 
   .product-info {
     width: 100%;
     height: 50%;
     padding-top: 1vw;
-  
+
   }
-  
+
   .product-brand {
     text-transform: uppercase;
     font-size: 4vw;
   }
-  
+
   .product-short-description {
     width: 100%;
     height: 20%;
@@ -936,38 +1015,44 @@ margin-bottom: 2%;
     overflow: hidden;
     opacity: 0.5;
     text-transform: capitalize;
-  
+
     font-size: 1.7vw;
   }
-#timer{
 
-  margin-top: 0%;
-}
-footer{
-  border-top: gray 1px solid;
-  align-items: center;
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
-}
-.footermen{
-  display: flex;
-  flex-direction: column;
-  
-}
-.logofoot{
-  text-align: center;
-  width: 100px;
-  margin-right: 30px;
-}
-.pfooter{
-  color: black; 
-  text-decoration: dotted;
-  font-size: 3vw;
-  font-family: 'Nova Square', sans-serif;
-}
-.afooter{
-  text-decoration: none;
-}
+  #timer {
+
+    margin-top: 0%;
+  }
+
+  footer {
+    border-top: gray 1px solid;
+    align-items: center;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .footermen {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .logofoot {
+    text-align: center;
+    width: 100px;
+    margin-right: 30px;
+  }
+
+  .pfooter {
+    color: black;
+    text-decoration: dotted;
+    font-size: 3vw;
+    font-family: 'Nova Square', sans-serif;
+  }
+
+  .afooter {
+    text-decoration: none;
+  }
 
 }
