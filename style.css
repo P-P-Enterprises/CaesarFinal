@@ -1079,7 +1079,7 @@ footer {
     overflow: auto;
     text-align: center;
     display: flex;
-    flex-direction:column ;
+    flex-direction:column-reverse ;
   
     justify-content: center;
   }
@@ -1109,7 +1109,7 @@ footer {
   }
   
   .offcanvas-content img {
-    width: 100%;
+    width: 60%;
     height: 50%;
   
   
