@@ -406,7 +406,7 @@ width: 25%;
   background-color: white;
   padding: 1%;
 width: 65%;
- height: 55%;
+ height: 65%;
   overflow: auto;
   text-align: center;
   display: flex;
@@ -431,8 +431,8 @@ height: 100%;
 padding: 5%;
 }
 .offcanvas-content img {
- width: 100%;
-  height: auto;
+ width: 50%;
+ height: 50%;
   margin-bottom: 20px;
 }
 
