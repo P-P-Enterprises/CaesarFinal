@@ -357,10 +357,7 @@ p {
 
 /* Estilos para a imagem do produto */
 .product-image {
-  width: 100%;
-  /* Ajuste conforme necessário */
-  height: auto;
-  /* Garante a proporção correta da imagem */
+ 
   margin-bottom: 20px;
   border-radius: 10px;
   /* Borda arredondada para a imagem */
