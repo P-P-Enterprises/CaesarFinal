@@ -407,8 +407,6 @@ width: 25%;
   max-height: 80%;
   overflow: auto;
   text-align: center;
-  display: flex;
-  flex-direction: row;
 }
 
 .offcanvas-content img {
@@ -557,13 +555,7 @@ padding: 1%;
 box-shadow: rgba(255, 255, 255, 0) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.footer {
 
-  text-align: center;
-  width: 100%;
-  background-color: #EACD91;
-  height: 100%;
-}
 
 .logo1 {
   width: 15%;
@@ -846,7 +838,27 @@ fieldset.grupo .campo {
   text-align: center;
 }
 /* fIM FORM */
+/*footer*/
+footer{
+  border-top: gray 1px solid;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  display: inline-flex;
+}
+.footermen{
+  display: flex;
+  flex-direction: column;
+}
 
+.pfooter{
+  color: black; 
+  text-decoration: dotted;
+  font-size: 16px;
+}
+.afooter{
+  text-decoration: none;
+}
 
 @media (max-width:600px) and (min-width:100px){
 
@@ -889,7 +901,29 @@ margin-bottom: 2%;
 
   margin-top: 0%;
 }
-
+.footer{
+  border-top: gray 1px solid;
+  align-items: center;
+  text-align: center;
+  
 }
+.footermen{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  align-items: start;
+}
+
+.pfooter{
+  color: black; 
+  text-decoration: dotted;
+  font-size: 10px;
+}
+.afooter{
+  text-decoration: none;
+}
+
+  }
+
 
   
