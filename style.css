@@ -413,6 +413,13 @@ width: 25%;
 .textos{
   display: flex;
   flex-direction:column;
+  margin: 2%;
+}
+.but-card
+{
+  display: flex;
+  flex-direction:column;
+
 }
 .offcanvas-content img {
  width: 100%;
