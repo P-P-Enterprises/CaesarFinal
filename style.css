@@ -593,6 +593,7 @@ font-family: 'cursive';
 }
 .tittle1::first-letter{
   font-family: 'Stay Dreaming';
+  color: #EACD91;
 }
 .tittle3{
   color: #000000;
