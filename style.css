@@ -408,7 +408,7 @@ width: 65%;
   overflow: auto;
   text-align: center;
   display: flex;
-  flex-direction:row;
+  flex-direction:row-reverse;
 }
 .textos{
   display: flex;
