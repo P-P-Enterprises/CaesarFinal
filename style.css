@@ -660,8 +660,8 @@ align-items: center;
 .linha{
   color: rgb(0, 0, 0);
   background-color: #000000;
-  height: 2%;
-  background-size: 5%;
+  height: 2vw;
+  background-size: 1vw;
 }
 
 .tt::first-letter{
