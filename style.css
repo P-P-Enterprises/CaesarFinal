@@ -417,6 +417,7 @@ width: 80%;
 }
 .but-card
 {
+  margin: 1%;
   display: flex;
   flex-direction:column;
 
