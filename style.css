@@ -650,12 +650,12 @@ width: 120%;
   margin-bottom: 1%;
   margin-left: 3%;
   margin-top: 1.5%;
-
+background: none;
 }
 .tittlediv{
   content: " ";
-  background-color: #EACD91;
-  height: 0.1%;
+  background: #EACD91;
+  height: 0.1vw;
   width: 100%;
 }
 
