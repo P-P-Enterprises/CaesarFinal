@@ -452,8 +452,8 @@ p {
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1%;
-  width: 90%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
   overflow: auto;
   text-align: center;
   display: flex;
@@ -468,6 +468,7 @@ p {
   margin-left: 8%;
   padding: 2%;
   height: 100%;
+  width: 100%;
 }
 
 .but-card {
@@ -475,17 +476,18 @@ p {
   display: flex;
   flex-direction: column;
   margin-right: 25%;
-margin-bottom: 66%;
+margin-bottom: 86%;
 color: #000000;
   height: 10%;
   padding: 5%;
+  font-size: 2vw;
 }
 
 .offcanvas-content img {
-  width: 90%;
+  width: 100%;
   height: 60%;
   margin-top: 15%;
-  margin-right: 3%;
+  margin-right: 10%;
 }
 
 
