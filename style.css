@@ -458,6 +458,8 @@ p {
   text-align: center;
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
 }
 
 .textos {
@@ -480,8 +482,8 @@ color: #000000;
 }
 
 .offcanvas-content img {
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
   margin-top: 15%;
   margin-right: 3%;
 }
