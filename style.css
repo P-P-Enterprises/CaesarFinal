@@ -421,12 +421,14 @@ width: 65%;
 }
 .but-card
 {
-  margin: 1%;
+
   display: flex;
   flex-direction:column;
-  margin-right: 5%;
+  margin-right: 10%;
   color: #E0E0F8;
   background-color: #000000;
+  height: 10%;
+  padding: 1%;
 }
 .offcanvas-content img {
  width: 100%;
