@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
+/*Header*/
 .header {
   background-color: gray;
   width: 100%;
@@ -30,20 +31,11 @@
   justify-content: space-around;
 }
 
-.caixa {
-  padding: 3px;
-  /* Adiciona espaço interno à div */
-  border: 2px solid black;
-  width: 20%;
-  text-align: center;
-  display: inline-block;
-  box-sizing: content-box;
-  justify-content: space-between;
-}
+
 
 .banner {
   width: 100%;
-  margin-top: 3%;
+  margin-top: 5%;
   height: 10%;
 }
 
@@ -357,7 +349,10 @@ p {
 
 /* Estilos para a imagem do produto */
 .product-image {
- 
+  width: 100%;
+  /* Ajuste conforme necessário */
+  height: auto;
+  /* Garante a proporção correta da imagem */
   margin-bottom: 20px;
   border-radius: 10px;
   /* Borda arredondada para a imagem */
@@ -452,52 +447,34 @@ p {
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 1%;
-  width: 100%;
-  height: 80%;
+  max-width: 80%;
+  max-height: 80%;
   overflow: auto;
   text-align: center;
-  display: flex;
-  flex-direction: row-reverse;
-
-  justify-content: center;
-}
-
-.textos {
-  display: flex;
-  flex-direction: column;
-  margin-right: 8%;
-  padding: 2%;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin-left: 3%;
-}
-
-.but-card {
-
-  display: flex;
-  flex-direction: column;
- 
-color: #000000;
-  height: 10%;
-  padding: 5%;
-  font-size: 1.5vw;
 }
 
 .offcanvas-content img {
-  width: 150%;
-  height: 100%;
-
-
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
+.card-bt {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
+.card-bt.n {
+  background-color: #f44336;
+}
 
 .product-image {
   position: relative;
@@ -518,7 +495,7 @@ color: #000000;
 
 .discount-tag {
   position: absolute;
-  background: #000000a8;
+  background: #000000e7;
   padding: 2%;
   border-radius: 15%;
   color: #ffffff;
@@ -559,22 +536,8 @@ color: #000000;
   text-align: center;
 }
 
-h2{
-  text-transform: uppercase;
-  font-size: 4vw;
-margin-bottom: 10%;
-  text-align: center;
-}
-#productNames {
-  font-size: 3vw;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-width: 120%;
-}
 
-#productDescriptions {
-  font-size: 2vw;
-  width: 120%;
-}
+
 
 .price {
   font-weight: 900;
@@ -646,43 +609,23 @@ width: 120%;
 }
 
 .tittle1 {
-  text-align: center;
-  font-size: 5.5vw;
-  margin-bottom: 1%;
-
+  text-align: left;
+  font-size: 4vw;
+  margin-bottom: 3%;
+  margin-left: 3%;
   margin-top: 1.5%;
-background: none;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
 }
-
-.linha{
-  color: rgba(0, 0, 0, 0);
-  background-color: #000000;
-  height: 0.3vw;
-  background-size: 0.3vw;
- margin-top: 2%;
-}
-
-.tt::first-letter{
-  color: #EACD91;
-}
-
 
 .tittle3 {
   color: #000000;
   font-size: 4vw;
-  font-family: 'cursive';
 }
 
 .tittle2 {
   text-align: center;
   font-size: 3vw;
   color: #EACD91;
-  margin-top: -1vw;
-  font-family: 'cursive';
+  margin-top: -1.5vw;
 }
 
 .beck {
@@ -820,145 +763,97 @@ align-items: center;
 }
 
 /* CSS Formulário */
-/* Todos os elementos da página */
-* {
-  margin: 0;
-  padding: 0;
+.formulario  .titulo { 
+  color: #757575;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
-
-/* Elementos com o ID "titulo" */
-#titulo {
-  font-family: sans-serif;
-  color: #380B61;
-  margin-left: 7%;
+.formulario {
+   
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  overflow: hidden;
+  padding: 20px;
 }
-
-/* Elementos com o ID "subtitulo" */
-#subtitulo {
-  font-family: sans-serif;
-  color: #380B61;
-  margin-left: 10%;
+:focus{outline: none;}
+.label { 
+  float: left; 
+  width: 100%; 
+  margin-bottom: 25px; 
+  position: relative;
 }
-
-#check {
-  display: inline-block;
+.input-bordas{
+  
+  font: 15px/24px "Lato", Arial, sans-serif; 
+  color: #333; 
+  width: 100%; 
+  box-sizing: border-box; 
+  letter-spacing: 1px;
+  border: 1px solid #ccc; 
+  padding: 7px 14px 9px; 
+  transition: 0.4s;
 }
-
-/* Elementos de tag <fieldset>*/
-fieldset {
-  border: 0;
-}
-
-/* Elemento de tag <body> */
-
-
-/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input,
-select,
-textarea,
-button {
-  font-family: sans-serif;
-  font-size: 1em;
-  color: #59429d;
-  border-radius: 5px;
-}
-
-/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before,
-.grupo:after {
-  display: table;
-}
-
-/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
-.grupo:after {
-  clear: both;
-}
-
-/* Elementos de classe "campo" */
-.campo {
-  margin-bottom: 1em;
-}
-
-/* Elementos de classe "campo" de tag <label> */
-.campo label {
-  margin-bottom: 0.2em;
-  color: #59429d;
-  display: block;
-}
-
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
-  float: left;
-  margin-right: 1em;
-}
-
-/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"],
-.campo input[type="email"],
-.campo select,
-.campo textarea {
-  padding: 0.2em;
-  border: 1px solid #59429d;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  display: block;
-}
-
-/* Elementos de classe "campo" de tag <select> e <option>*/
-.campo select option {
-  padding-right: 1em;
-}
-
-/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
-.campo input:focus,
-.campo select:focus,
-.campo textarea:focus {
-  background: #E0E0F8;
-}
-
-/* Elemento de classe "botao" */
-.botao {
+.textarea { resize:none!important; }
+.input-bordas ~ .focus-border:before,
+.input-bordas ~ .focus-border:after{content: ""; position: absolute; top: 0; right: 0; width: 0; height: 2px; background-color: #3399FF; transition: 0.2s; transition-delay: 0.2s;}
+.input-bordas ~ .focus-border:after{top: auto; bottom: 0; right: auto; left: 0; transition-delay: 0.6s;}
+.input-bordas ~ .focus-border i:before,
+.input-bordas ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #3399FF; transition: 0.2s;}
+.input-bordas ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0; transition-delay: 0.4s;}
+.input-bordas:focus ~ .focus-border:before,
+.input-bordas:focus ~ .focus-border:after{width: 100%; transition: 0.2s; transition-delay: 0.6s;}
+.input-bordas:focus ~ .focus-border:after{transition-delay: 0.2s;}
+.input-bordas:focus ~ .focus-border i:before,
+.input-bordas:focus ~ .focus-border i:after{height: 100%; transition: 0.2s;}
+.input-bordas:focus ~ .focus-border i:after{transition-delay: 0.4s;}
+.button-form { 
+  background-color: #39f;
+  padding: 0.5em 1.3em;
+  color: #fff;
   font-size: 1.2em;
-  background: #59429d;
-  border: 0;
-  margin-bottom: 1em;
-  color: #ffffff;
-  padding: 0.2em 0.6em;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  position: absolute;
-
-  margin-top: 10px;
-  transform: translate(-50%, -50%)
-}
-
-/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
-.botao:hover {
-  background: #CCBBFF;
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-  text-shadow: none;
-}
-
-/* Elementos de classe botão e de tag <select> */
-.botao,
-select {
+  border: none;
   cursor: pointer;
 }
-
-.formcon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  margin: 0% 25% 5% 25%;
-
+.borda-inversa {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: background;
+  transition-property: background;
+  box-shadow: inset 0 0 0 2px #39f, 0 0 1px rgba(0, 0, 0, 0);
 }
-
-.campoem {
-  text-align: center;
+.borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
+  
+  background: none;
+  color:#39f; 
 }
-
 /* fIM FORM */
+.mapa {
+  height: 40vw; /* Ajuste a altura conforme necessário */
+  width: 100%; /* Garanta que ocupe toda a largura da tela */
+  text-align: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+gmp-map {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+
 /*footer*/
 footer {
   border-top: gray 1px solid;
@@ -1065,115 +960,6 @@ footer {
   .afooter {
     text-decoration: none;
   }
-
-
-  .offcanvas-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 1%;
-    width: 80%;
-    height: 100%;
-    overflow: auto;
-    text-align: center;
-    display: flex;
-    flex-direction:column-reverse ;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .textos {
-    display: flex;
-    flex-direction: column;
-    margin-right: 8%;
-margin-top: 0vw;
-padding-top: 0vw;
-padding-bottom: 0%;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-left: 3%;
-  }
-  
-  .but-card {
-  
-    display: flex;
-    flex-direction: column;
-   width: 25%;
-  color: #000000;
-    height: 10%;
-    padding: 5%;
-    font-size: 1.5vw;
-    align-items:start;
-    text-align: center;
-    justify-content: start;
-  }
-  
-  .offcanvas-content img {
-    width: 80%;
-    height: 70%;
-  margin-top: 0%;
-  margin-bottom: 0%;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-  }
-  
-  h2{
-    text-transform: uppercase;
-    font-size: 5vw;
-  margin-bottom: 1%;
-    text-align: center;
-  }
-
-  #productNames {
-    font-size: 4cqb;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  width: 120%;
-  }
-  
-  #productDescriptions {
-    font-size: 3vw;
-    width: 120%;
-  }
-  .carousel-control-next, .carousel-control-prev {
-
-width: 5%;
-opacity: 0.4;
-height: 5%;
-  }
-  #nav-text1 {
-
-    font-size: 2vw;
-  
-  }
-  
-  #nav-text2 {
-  
-    font-size: 2vw;
-  
-  }
-  
-  #nav-text3 {
-  
-    font-size: 2vw;
-  
-  }
-  
-  #nav-text4 {
-  
-    font-size: 2vw;
-  
-  }
-  
-  #nav-text5 {
-  
-    font-size: 2vw;
-  }
   
 }
+

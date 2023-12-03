@@ -5,12 +5,16 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC283zfQ89NEwrNNBhhIvznDIE9Wp2jPxk&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
 
     <title>Document</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+        
+      </head>
+      
 
 
 <body>
@@ -51,12 +55,11 @@
         <img src="img/APROVEITE.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-        <img src="img/4.png" class="d-block w-100" alt="...">
+        <img src="img/carro-2.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-        <img src="img/5.png" class="d-block w-100" alt="...">
+        <img src="img/carro-3.png" class="d-block w-100" alt="...">
       </div>
-    </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
       data-bs-slide="prev">
@@ -71,98 +74,47 @@
   </div>
       <section class="contentmis">
         <div class="text">
-    <h1>Caesar</h1>
-    <h2>Nossa sede</h2>
-    <img src="img/sede.png" alt="">
-    <p> Inspirada na inovação e excelência. Assim como o design revolucionário de Cupertino, cada detalhe reflete a
-        grandiosidade do imperador moderno. Dos estilos ousados aos acessórios sofisticados, nossa sede é o epicentro
-        onde a moda e a imponência se encontram. Na Caesar Park, redefinimos o estilo masculino, elevando cada peça a
-        uma obra-prima. Vista-se com a grandiosidade que só a Caesar Park pode oferecer.</p>
-        </div>
-        <h2>Venha Trabalhar conosco!</h2>
-      </section>
-      
-      >
-   
-      <section class="formcon">
-    <form>
-
-      <fieldset class="grupo">
-          <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
-          <div class="campo">
-              <label for="nome"><strong>Nome Completo</strong></label>
-              <input type="text" name="nome" id="nome" required>
-          </div>
-
-          <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
-          <div class="campo">
-              <label for="sobrenome"><strong>Email</strong></label>
-              <input type="text" name="sobrenome" id="sobrenome" required>
-          </div>
-      </fieldset> 
-
-      
-
-      <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
-      <div class="campo">
-          <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
-          <label>
-              <input type="radio" name="devweb" value="frontend" checked>Front-end
-          </label>
-          <label>
-              <input type="radio" name="devweb" value="backend">Back-end
-          </label>
-          <label>
-              <input type="radio" name="devweb" value="fullstack">Fullstack
-          </label>
-      </div>
-
-      <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
-      <div class="campo">
-          <label for="senioridade"><strong>Senioridade</strong></label>
-          <select id="senioridade" required>
-            <option selected disabled value="">Selecione</option>
-            <option>Júnior</option>
-            <option>Pleno</option>
-            <option>Sênior</option>
-          </select>
-      </div>
-
-      <fieldset class="grupo">
-          <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
-          <div id="check">
-              <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
-              <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-              <label for="tecnologia1"> HTML</label>
-              <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
-              <label for="tecnologia2"> CSS</label>
-              <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
-              <label for="tecnologia3"> JavaScript</label>
-              <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
-              <label for="tecnologia4"> PHP</label>
-              <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
-              <label for="tecnologia5"> C#</label>
-              <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
-              <label for="tecnologia6"> Python</label>
-              <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
-              <label for="tecnologia7"> Java</label>
-          </div>
-      </fieldset>
-
-      <!-- Caixa de texto -->
-      <div class="campo">
-          <br>
-          <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
-          <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-      </div>
-
-      <!-- Botão para enviar o formulário -->
-      <button class="botao" type="submit" onsubmit="">Concluído</button>            
-
-  </form>
-</section>
+  
+    <h1>Nossa sede</h1>
     
-<div class="container" style="margin-top: 10%;">
+    
+      </section>
+      <!--maps-->
+      <div class="mapa">
+        <gmp-map center="-19.344867706298828,-47.29525375366211" zoom="14" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="-19.344867706298828,-47.29525375366211" title="My location">
+        </gmp-advanced-marker>
+      </gmp-map>
+        </div>
+
+   
+        <form class="formulario" method="post" action="enviaDados.php">
+        
+          <h2 class="titulo">Formulário de Contato</h2>
+          <label class="label">
+              
+              <input type="text" class="input-bordas" placeholder="Nome" required="">
+              <span class="focus-border"> <i></i> </span>
+          
+          </label>
+          <label class="label">
+              
+              <input type="text" class="input-bordas" placeholder="E-mail" required="">
+              <span class="focus-border"> <i></i> </span>
+          
+          </label>
+          
+           
+          <label class="label">
+              
+              <textarea type="text" class="input-bordas textarea" rows="4" placeholder="Assunto" required=""></textarea>
+              <span class="focus-border"> <i></i> </span>
+          
+          </label>
+          <button class="button-form borda-inversa"> Enviar</button>
+      </form>  
+    
+
   <footer class="footer">
     <p class="pfooter">&copy; 2023 P&P, Inc</p>
     <div class="logofoot">
@@ -196,6 +148,11 @@
     </div>
     </div>
   </footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+
 </body>
 
 </html>
