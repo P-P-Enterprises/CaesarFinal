@@ -839,7 +839,7 @@ p {
 /* fIM FORM */
 .mapa {
   height: 40vw; /* Ajuste a altura conforme necessário */
-  width: 90%; /* Garanta que ocupe toda a largura da tela */
+  width: 100%; /* Garanta que ocupe toda a largura da tela */
   text-align: center;
   position: relative;
   align-items: center;
