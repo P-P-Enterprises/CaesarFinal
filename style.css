@@ -608,24 +608,45 @@ p {
 
 }
 
+
 .tittle1 {
-  text-align: left;
-  font-size: 4vw;
-  margin-bottom: 3%;
-  margin-left: 3%;
+  text-align: center;
+  font-size: 5.5vw;
+  margin-bottom: 1%;
+
   margin-top: 1.5%;
+background: none;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
+
+.linha{
+  color: rgba(0, 0, 0, 0);
+  background-color: #000000;
+  height: 0.3vw;
+  background-size: 0.3vw;
+ margin-top: 2%;
+}
+
+.tt::first-letter{
+  color: #EACD91;
+}
+
 
 .tittle3 {
   color: #000000;
   font-size: 4vw;
+  font-family: 'cursive';
 }
 
 .tittle2 {
   text-align: center;
   font-size: 3vw;
   color: #EACD91;
-  margin-top: -1.5vw;
+  margin-top: -1vw;
+  font-family: 'cursive';
 }
 
 .beck {
@@ -961,5 +982,113 @@ footer {
     text-decoration: none;
   }
   
+  .offcanvas-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1%;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    flex-direction:column-reverse ;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .textos {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8%;
+margin-top: 0vw;
+padding-top: 0vw;
+padding-bottom: 0%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 3%;
+  }
+  
+  .but-card {
+  
+    display: flex;
+    flex-direction: column;
+   width: 25%;
+  color: #000000;
+    height: 10%;
+    padding: 5%;
+    font-size: 1.5vw;
+    align-items:start;
+    text-align: center;
+    justify-content: start;
+  }
+  
+  .offcanvas-content img {
+    width: 80%;
+    height: 70%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  h2{
+    text-transform: uppercase;
+    font-size: 5vw;
+  margin-bottom: 1%;
+    text-align: center;
+  }
+
+  #productNames {
+    font-size: 4cqb;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 120%;
+  }
+  
+  #productDescriptions {
+    font-size: 3vw;
+    width: 120%;
+  }
+  .carousel-control-next, .carousel-control-prev {
+
+width: 5%;
+opacity: 0.4;
+height: 5%;
+  }
+  #nav-text1 {
+
+    font-size: 2vw;
+  
+  }
+  
+  #nav-text2 {
+  
+    font-size: 2vw;
+  
+  }
+  
+  #nav-text3 {
+  
+    font-size: 2vw;
+  
+  }
+  
+  #nav-text4 {
+  
+    font-size: 2vw;
+  
+  }
+  
+  #nav-text5 {
+  
+    font-size: 2vw;
+  }
 }
 
