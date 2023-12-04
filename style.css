@@ -414,8 +414,9 @@ color: #000000;
 
 .carousel-control-next{width: 15%;
   opacity: 0.6;
+  margin-top: 10%;
   height: 15%;} .carousel-control-prev {
-
+    margin-top: 10%;
   width: 15%;
   opacity: 0.6;
   height: 15%;
