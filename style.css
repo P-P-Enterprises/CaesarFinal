@@ -228,7 +228,7 @@ p {
   margin-right: 1%;
   margin-top: 5%;
   margin-bottom: 2%;
-  width: 10%;
+  
 
 
 }
@@ -389,20 +389,7 @@ color: #000000;
 }
 
 /* Estilos para o botão de fechar */
-.buttonpesq3 {
-  color: rgb(255, 255, 255);
-  background-color: #000000;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  font-size: 1.8vw;
-  border: none;
-  border-radius: 7%;
-  padding: 1%;
-  margin-top: 5%;
-  margin-bottom: 2%;
-  width: 10%;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .buttonpesq3:hover {
   color: rgb(255, 255, 255);
