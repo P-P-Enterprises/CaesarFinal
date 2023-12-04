@@ -412,14 +412,13 @@ color: #000000;
 }
 
 
-.carousel-control-next{width: 15%;
-  opacity: 0.7;
-  margin-top: 50%;
-  height: 7%;} .carousel-control-prev {
-    margin-top: 50%;
-  width: 15%;
-  opacity: 0.7;
-  height: 7%;
+.carousel-control-next{width: 10%;
+  opacity: 0.4;
+  height: 10%;} .carousel-control-prev {
+
+  width: 10%;
+  opacity: 0.4;
+  height: 10%;
     }
 
 .close-btn {
@@ -828,18 +827,23 @@ margin-bottom: -0.3vw;
   text-shadow: 0px 8px 8.5px rgba(0, 0, 0, 0.445);
 }
 
-.contentmis {
+.contentmissao {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
   margin: 5% 25% 0% 25%;
-
+  border: #000000 1px solid;
+  box-shadow: 10px 5px 5px black;
 }
 
-.text {
-  margin: 0 25% 0 25%;
+.textmissao{
+  margin: 0 20% 0 20%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Hedvig Letters Serif', serif;
+  padding-bottom: 40px;
 }
 
 /* CSS Formulário */
@@ -968,7 +972,24 @@ footer {
 
 
 @media (max-width:600px) and (min-width:100px) {
+  .contentmissao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 5% 0% 0% 0%;
+    border: #000000 1px solid;
+    padding: 5%;
+    box-shadow: 10px 5px 5px black;
+  }
 
+  .textmissao{
+    margin: 0 0% 0 0%;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Hedvig Letters Serif', serif;
+  }
   .product-card {
     flex: 0 0 auto;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
