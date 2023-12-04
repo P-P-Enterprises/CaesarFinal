@@ -412,12 +412,15 @@ color: #000000;
 }
 
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next{width: 2%;
+  opacity: 0.4;
+  height: 2%;} .carousel-control-prev {
 
   width: 2%;
   opacity: 0.4;
   height: 2%;
     }
+
 .close-btn {
   position: absolute;
   top: 10px;
