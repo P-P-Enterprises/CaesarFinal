@@ -441,15 +441,14 @@ color: #000000;
 
 .vlrfnl {
   font-weight: bold;
-  font-size: 1.8vw;
+  font-size: 2vw;
   color: rgba(66, 65, 65, 0.603);
 
 }
 
 .vlrinc {
-  font-size: 1.8vw;
-  color: rgba(255, 0, 0, 1);
-  text-decoration: line-through;
+  font-size: 2vw;
+
 
 }
 
@@ -1144,31 +1143,46 @@ height: 5%;
   }
   #nav-text1 {
 
-    font-size: 2vw;
+    font-size: 3vw;
   
   }
   
   #nav-text2 {
   
-    font-size: 2vw;
+    font-size: 3vw;
   
   }
   
   #nav-text3 {
   
-    font-size: 2vw;
+    font-size: 3vw;
   
   }
   
   #nav-text4 {
   
-    font-size: 2vw;
+    font-size: 3vw;
   
   }
   
   #nav-text5 {
   
-    font-size: 2vw;
+    font-size: 3vw;
   }
+
+
+  .vlrfnl {
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: rgba(66, 65, 65, 0.603);
+  
+  }
+  
+  .vlrinc {
+    font-size: 2.5vw;
+  
+  
+  }
+  
 }
 
