@@ -68,6 +68,9 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+</div>
+
     <div class="cardbutton">
         <button  class="buttonpesq" id="streetwearBtn">Streetwear</button>
   <button class="buttonpesq" id="casualBtn">Camisas Casual</button>
@@ -79,26 +82,35 @@
  
   </div>
   
-    <div id="Div-Princ"> </div>
-  
+  <div style="margin-top: 2vw;" class="time">
+    <script src="swiper.js"></script>
+    <h3 class="tittle3">Promoção Relâmpago</h3>
+    <p class="tittle2">Termina em:</p>
+    <div id="timer" class="timer"></div>
+  </div>
+    <div id="Div-Princ"> 
+
+  </div>
+
     <div id="offcanvas2" class="offcanvas2">
       <div class="offcanvas-content2">
 
-        <h2>Detalhes do Produto</h2>
-       <div class="principal-conteudo">
-        <img id="productImage" class="product-image" src="" alt="Product Image">
+  
+ <div class="imgg">
+        <img id="productImage"  class="product-image" src="" alt="Product Image">
+      </div>
         <div class="textos">
+          <h2>Detalhes do Produto</h2>
           <p id="productNames"  ></p>
 
           <p id="productDescriptions"></p>
-          <p>PREÇO INCIAL</p>
-          <P> PREÇO FINAL</P>
+      
       
           <P>COR:</P>
           <input type="color" id="head" name="head" value="#e66465" />
      
         </div>
-      </div>
+     
       <div class="posbutton">
         <button  class="buttonpesq3"onclick="closeOffCanvas()">Fechar</button>
       </div>
@@ -647,7 +659,7 @@ function filterButtonClicked(category) {
           productImage.src = productImgSrc;
 
           offcanvas.style.display = 'block';
-          productNames.classList.add('headproduct2');
+          productNames.classList.add('');
           productDescriptions.classList.add('vlrfnl');
           productImage.classList.add('img-box3')
         }
@@ -663,9 +675,29 @@ function filterButtonClicked(category) {
     }
   }
 
-
+  function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+          minutes = parseInt(timer / 60, 10);
+          seconds = parseInt(timer % 60, 10);
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+          display.textContent = minutes + ":" + seconds;
+          if (--timer < 0) {
+            timer = duration;
+          }
+        }, 1000);
+      }
+      window.onload = function () {
+        var duration = 60 * 59; // Converter para segundos
+        display = document.querySelector('#timer'); // selecionando o timer
+        startTimer(duration, display); // iniciando o timer
+      };
 
   
 </script>
+
+
+</body>
 </body>
 </html>

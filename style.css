@@ -235,9 +235,12 @@ p {
 
 .posbutton {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+ 
+color: #000000;
+  height: 10%;
+  padding: 5%;
+  font-size: 1.5vw;
 
 }
 
@@ -282,8 +285,8 @@ p {
 
 .img-box3 {
 
-  height: 20%;
-  width: 30%;
+  height: 10%;
+  width: 20%;
   border-radius: 3%;
 }
 
@@ -322,22 +325,25 @@ p {
 }
 
 .offcanvas-content2 {
-  text-align: center;
-  position: relative;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1%;
   width: 100%;
-  /* Ajuste conforme necessário */
-  max-width: 100%;
-  /* Largura máxima do conteúdo */
-  max-height: 100%;
-  /* Altura máxima do conteúdo */
+  height: 100%;
   overflow: auto;
-  background-color: #fff;
-  padding: 2%;
-  box-sizing: border-box;
-  border-radius: 10px;
-  /* Borda arredondada */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  /* Sombra */
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+
+
+
+
 }
 
 .close-btn {
@@ -349,23 +355,28 @@ p {
 
 /* Estilos para a imagem do produto */
 .product-image {
-  width: 100%;
-  /* Ajuste conforme necessário */
-  height: auto;
-  /* Garante a proporção correta da imagem */
-  margin-bottom: 20px;
-  border-radius: 10px;
-  /* Borda arredondada para a imagem */
-}
+  width: 20%;
+  height: 10%;
 
-#productImage2 {
-  width: 25%;
-  /* Ajuste conforme necessário */
-  height: auto;
-  /* Garante a proporção correta da imagem */
-  margin-bottom: 20px;
-  border-radius: 10px;
-  /* Borda arredondada para a imagem */
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.imgg{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+#productImage {
+  width: 70%;
+  height: 50%;
+
 }
 
 /* Estilos para os textos dentro do off-canvas */
@@ -389,6 +400,8 @@ p {
   margin-top: 5%;
   margin-bottom: 2%;
   width: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 .buttonpesq3:hover {
@@ -556,9 +569,8 @@ color: #000000;
 
 
 .card-btn:hover {
-
-  background: rgb(94, 81, 56);
   color: rgb(255, 255, 255);
+  background-color: #EACD91;
   padding: 2%;
   border-radius: 9%;
 }
@@ -673,15 +685,16 @@ align-items: center;
 .tittle3 {
   color: #000000;
   font-size: 4vw;
-  font-family: 'cursive';
+
 }
 
 .tittle2 {
   text-align: center;
   font-size: 3vw;
   color: #EACD91;
-  margin-top: -1vw;
-  font-family: 'cursive';
+  margin-top: -1.3vw;
+font-weight: bolder;
+margin-bottom: -0.3vw;
 }
 
 .beck {
@@ -770,31 +783,31 @@ align-items: center;
 
 #nav-text1 {
 
-  font-size: 1vw;
+  font-size: 1.5vw;
 
 }
 
 #nav-text2 {
 
-  font-size: 1vw;
+  font-size: 1.5vw;
 
 }
 
 #nav-text3 {
 
-  font-size: 1vw;
+  font-size: 1.5vw;
 
 }
 
 #nav-text4 {
 
-  font-size: 1vw;
+  font-size: 1.5vw;
 
 }
 
 #nav-text5 {
 
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .beckhum {
