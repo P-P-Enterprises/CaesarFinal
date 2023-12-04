@@ -411,6 +411,13 @@ color: #000000;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.685);
 }
 
+
+.carousel-control-next, .carousel-control-prev {
+
+  width: 5%;
+  opacity: 0.4;
+  height: 5%;
+    }
 .close-btn {
   position: absolute;
   top: 10px;
