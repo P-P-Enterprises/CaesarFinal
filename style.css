@@ -412,13 +412,14 @@ color: #000000;
 }
 
 
-.carousel-control-next{width: 10%;
-  opacity: 0.4;
-  height: 10%;} .carousel-control-prev {
-
-  width: 10%;
-  opacity: 0.4;
-  height: 10%;
+.carousel-control-next{width: 15%;
+  opacity: 0.7;
+  margin-top: 70%;
+  height: 7%;} .carousel-control-prev {
+    margin-top: 70%;
+  width: 15%;
+  opacity: 0.7;
+  height: 7%;
     }
 
 .close-btn {
