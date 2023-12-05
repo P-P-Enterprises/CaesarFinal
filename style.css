@@ -338,7 +338,7 @@ color: #000000;
   text-align: center;
   display: flex;
   flex-direction: row;
-
+  box-sizing: border-box;
   justify-content: center;
 
 
